@@ -1,0 +1,9 @@
+.logo {
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    padding: 5px 0px;
+}
