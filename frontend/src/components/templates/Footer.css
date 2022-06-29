@@ -7,4 +7,6 @@ footer.footer {
     padding: 0px 25px;
     background-color: #FFF;
     box-shadow: var(--shadow);
+    overflow: hidden;
+    white-space: nowrap;
 }
