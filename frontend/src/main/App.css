@@ -23,23 +23,23 @@
     background-color: #F5F5F5;
 }
 
-aside.logo {
+.logo {
     grid-area: logo;
 }
 
-header.header {
+.header {
     grid-area: header;
 }
 
-nav.menu-area {
+.menu-area {
     grid-area: nav;
 }
 
-main.content {
+.content {
     grid-area: content;
 }
 
-footer.footer {
+.footer {
     grid-area: footer;
 }
 
