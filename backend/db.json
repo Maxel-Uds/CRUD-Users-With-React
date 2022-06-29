@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Maxel Udson Alves da Conceição",
+            "email": "maxellopes32@gmail.com"
+        },
+        {
+            "id": 2,
+            "name": "Marcelo Lopes Constantino",
+            "email": "marcelo.lopes44@gmail.com"
+        }
+    ]
+}
