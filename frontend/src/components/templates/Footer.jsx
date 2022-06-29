@@ -4,7 +4,7 @@ import './Footer.css';
 export default function footer(props) {
     return (
         <footer className="footer">
-            Footer
+            <span>Desenvolvido com <i className="fa fa-heart text-danger"></i> por <strong>Maxel Udson</strong></span>
         </footer>
     );
 }

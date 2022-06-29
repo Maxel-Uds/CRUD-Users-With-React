@@ -1,0 +1,10 @@
+footer.footer {
+    display: flex;
+    /* Alinha Verticalmente */
+    align-items: center;
+    /* Alinha Horizontalmente */
+    justify-content: center;
+    padding: 0px 25px;
+    background-color: #FFF;
+    box-shadow: var(--shadow);
+}
