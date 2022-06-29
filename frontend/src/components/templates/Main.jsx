@@ -5,7 +5,7 @@ import './Main.css';
 export default function main(props) {
     return (
         <Fragment>
-            <Header/>
+            <Header {...props}/>
             <main className="content">
                 Content
             </main>
