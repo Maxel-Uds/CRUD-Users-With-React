@@ -1,0 +1,10 @@
+.table-btn {
+    margin-left: 5px;
+}
+
+@media(max-width: 768px) {
+    .table-btn {
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+}

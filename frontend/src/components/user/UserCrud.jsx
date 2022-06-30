@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import Main from '../templates/Main';
+import './UserCrud.css';
 
 const headerProps = {
     icon: 'users',
@@ -99,7 +100,7 @@ export default class UserCrud extends Component {
                     <td>{user.email}</td>
                     <td>
                         <button className="btn btn-warning" onClick={() => this.load(user)}><i className="fa fa-pencil"></i></button>
-                        <button className="btn btn-danger mx-2" onClick={() => this.remove(user)}><i className="fa fa-trash"></i></button>
+                        <button className="btn btn-danger table-btn" onClick={() => this.remove(user)}><i className="fa fa-trash"></i></button>
                     </td>
                 </tr>
             );
