@@ -28,9 +28,9 @@ export default class UserCrud extends Component {
         this.save = this.save.bind(this);
     }
 
-    componentWillMount() {
+    componentDidMount() {
         Axios(baseUrl)
-            .then(response => this.setState({ list: response.data }));
+        .then(response => this.setState({ list: response.data }));
     }
 
     clear() {
