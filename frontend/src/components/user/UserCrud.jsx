@@ -19,6 +19,14 @@ export default class UserCrud extends Component {
 
     state = { ...initialState };
 
+    constructor(props) {
+        super(props);
+
+        this.updateField = this.updateField.bind(this);
+        this.clear = this.clear.bind(this);
+        this.save = this.save.bind(this);
+    }
+
     clear() {
         this.setState({ user: initialState.user });
     }
@@ -41,10 +49,47 @@ export default class UserCrud extends Component {
         return list;
     }
 
+    updateField(event) {
+        const user = { ...this.state.user };
+        user[event.target.name] = event.target.value;
+        this.setState({ user });
+    }
+
+    renderForm() {
+        return (
+            <div className="form">
+                <div className="row">
+                    <div className="col-12 col-md-6">
+                        <div className="form-group">
+                            <label>Nome</label>
+                            <input type="text" className="form-control" name="name" value={this.state.user.name} onChange={this.updateField} placeholder="Nome Completo..."/>
+                        </div>
+                    </div>
+
+                    <div className="col-12 col-md-6">
+                        <div className="form-group">
+                            <label>Email</label>
+                            <input type="email" className="form-control" name="email" value={this.state.user.email} onChange={this.updateField} placeholder="Email..."/>
+                        </div>
+                    </div>
+                </div>
+
+                <hr/>
+
+                <div className="row">
+                   <div className="col-12 d-flex justify-content-center">
+                       <button className="btn btn-primary" onClick={this.save}>Salvar</button>
+                       <button className="btn btn-secondary mx-2" onClick={this.clear}>Cancelar</button>
+                   </div>
+                </div>
+            </div>
+        );
+    }
+
     render() {
         return (
             <Main {...headerProps}>
-                Usuário
+                {this.renderForm()}
             </Main>
         );
     }
